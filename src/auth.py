@@ -3,7 +3,7 @@
 # --- Authentication policy (documented in docs/authentication.mdx) ---
 MAX_FAILED_ATTEMPTS = 3          # lock the account after this many failures
 MIN_PASSWORD_LENGTH = 8          # reject passwords shorter than this
-SESSION_TIMEOUT_MINUTES = 30     # idle sessions expire after this long
+SESSION_TIMEOUT_MINUTES = 60     # idle sessions expire after this long
 
 
 def login(username: str, password: str, failed_attempts: int) -> dict:
